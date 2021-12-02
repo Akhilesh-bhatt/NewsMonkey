@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import NewsItems from './NewsItems'
+import SpinnerLoad from './SpinnerLoad';
 
 export class News extends Component {
     article = [
@@ -67,49 +68,53 @@ export class News extends Component {
     }
 
     async componentDidMount() {
-        let url = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=2baeca0a3cc147568c145d0370d438b4&page=1&pageSize=20";
+        let url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=2baeca0a3cc147568c145d0370d438b4&page=1&pageSize=${this.props.pageSize}`;
+        this.setState({loading: true});
         let data = await fetch(url);
         let prashdata = await data.json();
         // console.log(prashdata);
         this.setState({
             article: prashdata.articles,
-            totalResults: prashdata.totalResults
+            totalResults: prashdata.totalResults,
+            loading: false
         });
     }
 
     handlePrevPage = async () => {
         console.log("prev")
-        let url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=2baeca0a3cc147568c145d0370d438b4&page=${this.state.page - 1}&pageSize=20`;
+        let url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=2baeca0a3cc147568c145d0370d438b4&page=${this.state.page - 1}&pageSize=${this.props.pageSize}`;
+        this.setState({loading: true});
         let data = await fetch(url);
         let prashdata = await data.json();
         this.setState({
             article: prashdata.articles,
-            page: this.state.page - 1
+            page: this.state.page - 1,
+            loading: false
         });
     }
 
     handleNextPage = async () => {
         console.log("next")
-        if (Math.ceil(this.state.totalResults/20) < ( this.state.page + 1)) {
-
-        }
-        else {
-            let url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=2baeca0a3cc147568c145d0370d438b4&page=${this.state.page + 1}&pageSize=20`;
+        if (!Math.ceil(this.state.totalResults/20) < ( this.state.page + 1)) {
+            let url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=2baeca0a3cc147568c145d0370d438b4&page=${this.state.page + 1}&pageSize=${this.props.pageSize}`;
+            this.setState({loading: true});
             let data = await fetch(url);
             let prashdata = await data.json();
             this.setState({
                 article: prashdata.articles,
-                page: this.state.page + 1
+                page: this.state.page + 1,
+                loading: false
             });
         }
     }
     render() {
-
+        
         return (
             <div className='container my-4'>
-                <h1 className="my-3" >NewsMonkey - News Heading</h1>
+                <h1 className="my-3 text-center" >NewsMonkey - News Heading</h1>
+                {this.state.loading && <SpinnerLoad/>}
                 <div className="row">
-                    {this.state.article.map((element) => {
+                    {!this.state.loading && this.state.article.map((element) => {
                         return <div className="col-md-4" key={element.url}>
                             {/* <NewsItems title={element.title.slice(0,50)} discription={element.description.slice(0,100)} imageUrl={element.urlToImage} url={element.url} /> */}
                             <NewsItems title={element.title} discription={element.description} imageUrl={element.urlToImage ? element.urlToImage : "https://www.reuters.com/resizer/PPtUQBO_55IQKCNEdtvVuJLEYw0=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/2ZF2FYJOBRIXNBXDVP5XPIJE2U.jpg"} url={element.url} />
