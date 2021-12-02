@@ -1,0 +1,266 @@
+{
+    "status": "ok",
+    "totalResults": 38,
+    "articles": [
+        {
+            "source": {
+                "id": "the-verge",
+                "name": "The Verge"
+            },
+            "author": "Sam Byford",
+            "title": "Apple may have a problem with iPhone demand as well as supply - The Verge",
+            "description": "Apple is indicating to its iPhone 13 component suppliers that it may not order as many units as expected due to a drop in demand, Bloomberg reports. The company had already reportedly cut orders for the year by 10 million units.",
+            "url": "https://www.theverge.com/2021/12/1/22813347/apple-iphone-demand-suppliers-chip-shortage-report",
+            "urlToImage": "https://cdn.vox-cdn.com/thumbor/C-coMdnw4KomdDSBRJwsUkNsMJQ=/0x215:2002x1263/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22863273/vpavic_210916_4760_0240.jpg",
+            "publishedAt": "2021-12-02T04:06:47Z",
+            "content": "The chip shortage might not explain everything\r\nPhoto by Vjeran Pavic / The Verge\r\nApple is indicating to its iPhone 13 component suppliers that it may not order as many units as expected due to a dr… [+1088 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "CBS Sports"
+            },
+            "author": "",
+            "title": "MLB lockout: Everything to know about baseball's first work stoppage since 1994-95 - CBS sports.com",
+            "description": "Why is there a lockout? What are they fighting over? How long will it last? Let's answer as best we can",
+            "url": "https://www.cbssports.com/mlb/news/mlb-lockout-everything-to-know-about-baseballs-first-work-stoppage-since-1994-95/",
+            "urlToImage": "https://sportshub.cbsistatic.com/i/r/2021/12/02/20d17f47-fea5-4fd3-8eb1-7c2eb7a0de91/thumbnail/1200x675/5a9feec9b91ff9740c391482ec35935a/clark-manfred.png",
+            "publishedAt": "2021-12-02T03:57:00Z",
+            "content": "At 11:59 p.m. ET on Wednesday, the current collective bargaining agreement (CBA) -- the negotiated accord that governs almost every aspect of the working relationship between Major League Baseball pl… [+5576 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "SciTechDaily"
+            },
+            "author": null,
+            "title": "Archaeology Mystery Solved: Strange Footprints From Laetoli, Tanzania, Are From Early Humans - SciTechDaily",
+            "description": "Findings provide conclusive evidence that multiple species of hominins co-existed on the landscape. The oldest unequivocal evidence of upright walking in the human lineage are footprints discovered at Laetoli, Tanzania in 1978, by paleontologist Mary Leakey a…",
+            "url": "https://scitechdaily.com/archaeology-mystery-solved-strange-footprints-from-laetoli-tanzania-are-from-early-humans/",
+            "urlToImage": "https://scitechdaily.com/images/Five-Hominin-Footprints.jpg",
+            "publishedAt": "2021-12-02T03:20:16Z",
+            "content": "Model of Laetoli Site A using photogrammetry showing five hominin footprints (a); and corresponding contour map of the site at Laetoli, Tanzania, generated from a 3D surface scan (b); map showing Lae… [+8088 chars]"
+        },
+        {
+            "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": "Alisha Ebrahimji and Christina Zdanowicz, CNN",
+            "title": "A beloved football player and a senior with college scholarships among Michigan school shooting victims - CNN",
+            "description": "Friends, family and an entire Michigan high school are grieving the loss of four students after a 15-year-old boy opened fire during the school day, killing four peers and shooting seven others on campus.",
+            "url": "https://www.cnn.com/2021/12/01/us/michigan-oxford-high-school-shooting-victims-trnd/index.html",
+            "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/211130223819-05-oxford-school-shooting-vigil-1130-super-tease.jpg",
+            "publishedAt": "2021-12-02T03:04:00Z",
+            "content": "(CNN)Friends, family and an entire Michigan high school are grieving the loss of four students after a 15-year-old boy opened fire during the school day, killing four peers and shooting seven others … [+5855 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "KSL.com"
+            },
+            "author": "Seth Borenstein, Associated Press",
+            "title": "New dinosaur species from Chile had a unique slashing tail - KSL.com",
+            "description": "Fossils found in Chile are from a strange-looking dog-sized dinosaur species that had a unique slashing tail weapon, scientists reported Wednesday.",
+            "url": "https://www.ksl.com/article/50295392/new-dinosaur-species-from-chile-had-a-unique-slashing-tail",
+            "urlToImage": "https://img.ksl.com/slc/2852/285274/28527464.jpeg?filter=kslv2/responsive_story_lg",
+            "publishedAt": "2021-12-02T03:01:21Z",
+            "content": "Estimated read time: 2-3 minutes\r\nSANTIAGO, Chile Fossils found in Chile are from a strange-looking dog-sized dinosaur species that had a unique slashing tail weapon, scientists reported Wednesday.\r\n… [+2490 chars]"
+        },
+        {
+            "source": {
+                "id": "politico",
+                "name": "Politico"
+            },
+            "author": "Eugene Daniels, Christopher Cadelago, Daniel Lippman",
+            "title": "Symone Sanders to leave the VP’s office - Politico",
+            "description": "The departure, which is set for the end of the month, is the second major exit from Harris’ office in the last few weeks.",
+            "url": "https://www.politico.com/news/2021/12/01/symone-sanders-vice-president-office-523660",
+            "urlToImage": "https://static.politico.com/5b/9c/8563537b4b39abdcb83d05b8c2a6/lede2.20190807msmSymone-Sanders050_DxO.jpg",
+            "publishedAt": "2021-12-02T02:59:42Z",
+            "content": "In a note to staff Wednesday night, Sanders confirmed the exit, writing, I'm so grateful to the VP for her vote of confidence from the very beginning and the opportunity to see what can be unburdened… [+2085 chars]"
+        },
+        {
+            "source": {
+                "id": "bloomberg",
+                "name": "Bloomberg"
+            },
+            "author": null,
+            "title": "JPM's Kolanovic Says Buy the Dip as Omicron Fears May Recede - Bloomberg",
+            "description": null,
+            "url": "https://www.bloomberg.com/tosv2.html?vid=&uuid=1bb22075-532c-11ec-bac3-55675863786f&url=L25ld3MvYXJ0aWNsZXMvMjAyMS0xMi0wMi9qcG1vcmdhbi1zYXlzLWJ1eS10aGUtZGlwLWFzLW9taWNyb24tbWF5LXNpZ25hbC1wYW5kZW1pYy1lbmRpbmc=",
+            "urlToImage": null,
+            "publishedAt": "2021-12-02T02:45:00Z",
+            "content": "To continue, please click the box below to let us know you're not a robot."
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "New York Times"
+            },
+            "author": "Luke Broadwater",
+            "title": "Jan. 6 Panel Seeks Contempt Charge for Jeffrey Clark - The New York Times",
+            "description": "The House committee investigating the Capitol riot agreed to delay action against Jeffrey Clark until after he could be interviewed again.",
+            "url": "https://www.nytimes.com/2021/12/01/us/politics/jeffrey-clark-contempt-congress.html",
+            "urlToImage": "https://static01.nyt.com/images/2021/12/01/us/politics/01dc-investigate-1/merlin_195934866_4f4e6f6b-903a-4c40-ba8c-fdac6b05119b-facebookJumbo.jpg",
+            "publishedAt": "2021-12-02T02:03:58Z",
+            "content": "Mr. Clark offered no answers.\r\nWe will not be answering any questions or producing any documents, Mr. Clarks lawyer, Harry W. MacDougald, said flatly.\r\nThe vote was the second such confrontation betw… [+3948 chars]"
+        },
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": null,
+            "title": "Supreme Court conservatives appear willing to gut abortion rights - Reuters",
+            "description": "Conservative U.S. Supreme Court justices on Wednesday signaled a willingness to dramatically curtail abortion rights in America and perhaps overturn the landmark 1973 Roe v. Wade ruling that legalized the procedure nationwide as they indicated they would upho…",
+            "url": "https://www.reuters.com/world/us/us-supreme-court-consider-rolling-back-abortion-rights-2021-12-01/",
+            "urlToImage": "https://www.reuters.com/resizer/PPtUQBO_55IQKCNEdtvVuJLEYw0=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/2ZF2FYJOBRIXNBXDVP5XPIJE2U.jpg",
+            "publishedAt": "2021-12-02T01:31:00Z",
+            "content": "WASHINGTON, Dec 1 (Reuters) - Conservative U.S. Supreme Court justices on Wednesday signaled a willingness to dramatically curtail abortion rights in America and perhaps overturn the landmark 1973 Ro… [+6439 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "KSL.com"
+            },
+            "author": "The Associated Press",
+            "title": "Alec Baldwin about film set shooting: 'I didn't pull the trigger' - KSL.com",
+            "description": "Alec Baldwin told ABC's George Stephanopoulos in an interview airing Thursday that he did not pull the trigger on a prop gun he was holding on a New Mexico film set when it went off, killing a cinematographer.",
+            "url": "https://www.ksl.com/article/50295324/alec-baldwin-about-film-set-shooting-i-didnt-pull-the-trigger",
+            "urlToImage": "https://img.ksl.com/slc/2852/285272/28527233.jpg?filter=kslv2/responsive_story_lg",
+            "publishedAt": "2021-12-02T01:11:17Z",
+            "content": "Estimated read time: 2-3 minutes\r\nNEW YORK Alec Baldwin told ABC's George Stephanopoulos in an interview airing Thursday that he did not pull the trigger on a prop gun he was holding on a New Mexico … [+1315 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "PEOPLE"
+            },
+            "author": "Daniela Avila",
+            "title": "Sam Asghari Says He's Inspired by 'Wife' Britney Spears' 'Beautiful Heart' Ahead of Her 40th Birthday - Yahoo Entertainment",
+            "description": "A source told PEOPLE last month that Spears has begun preparing for her wedding with Asghari",
+            "url": "https://people.com/music/sam-asghari-says-hes-inspired-by-wife-britney-spears-beautiful-heart/",
+            "urlToImage": "https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=%5B510%2C165%5D&w=1000&h=500&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F12%2F01%2FSam-Asghari-Britney-Spears.jpg",
+            "publishedAt": "2021-12-02T01:08:14Z",
+            "content": "Sam Asghari is showing some love for his fiancée.\r\nOne day before Britney Spears' 40th birthday, Asghari shared a series of photos on Instagram of himself with Spears — and declared his admiration fo… [+2831 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Pro Football Network"
+            },
+            "author": null,
+            "title": "NFL RB Start 'Em, Sit 'Em Week 13: Boston Scott to take flight, Damien Harris a blight, Devonta Freeman is alright - Pro Football Network",
+            "description": "With the fantasy regular season nearing the end, which RBs appear on the list of the top start 'em and sit 'em options for Week 13?",
+            "url": "https://www.profootballnetwork.com/nfl-fantasy-football-start-em-sit-em-rb-2021-nflwk-13/",
+            "urlToImage": "https://www.profootballnetwork.com/wp-content/uploads/2021/12/RB-Start_Sit-2.jpg",
+            "publishedAt": "2021-12-02T01:00:19Z",
+            "content": "Injuries and bye weeks continue to cause lineup issues, forcing fantasy football managers to face even further difficult lineup decisions. Lets take a look at our Week 13 RB start em and sit em plays… [+5075 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Yahoo Entertainment"
+            },
+            "author": "Marquise Francis",
+            "title": "Border closures won't do much to stop Omicron, expert says, and could be counterproductive - Yahoo News",
+            "description": "President Biden’s decision late last week to ban travel from eight southern African countries is unlikely to curb the spread of the Omicron coronavirus...",
+            "url": "https://news.yahoo.com/border-closures-wont-do-much-to-stop-omicron-expert-says-and-could-be-counterproductive-003040416.html",
+            "urlToImage": "https://s.yimg.com/ny/api/res/1.2/D7QOhadvWBc7zS1_f7Ljvg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU-/https://s.yimg.com/os/creatr-uploaded-images/2021-12/bdfd9650-52f9-11ec-bafd-19afb0a48b37",
+            "publishedAt": "2021-12-02T00:32:00Z",
+            "content": "President Bidens decision late last week to ban travel from eight southern African countries is unlikely to curb the spread of the Omicron coronavirus variant, an epidemiologist warns, and could even… [+8192 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Eonline.com"
+            },
+            "author": "Kisha Forde",
+            "title": "Shawn Mendes Drops Breakup Song \"It'll Be Okay\" After Camila Cabello Split - E! Online",
+            "description": "On the heels of his breakup from ex Camila Cabello, singer Shawn Mendes dropped a slow, heart-rending ballad that promises everything will be alright after all.",
+            "url": "https://www.eonline.com/news/1311709/shawn-mendes-drops-breakup-song-itll-be-okay-after-camila-cabello-split",
+            "urlToImage": "https://akns-images.eonline.com/eol_images/Entire_Site/2021812/rs_1200x1200-210912152747-1200-Shawn-Mendes-mp.jpg?fit=around%7C1080:1080&output-quality=90&crop=1080:1080;center,top",
+            "publishedAt": "2021-12-02T00:08:00Z",
+            "content": "After embracing a summer of love, Shawn Mendes is ushering in a more somber season.On Wednesday, Dec. 1, the 23-year-old singer dropped his latest single, \"It'll Be Okay,\" and let's just say we just … [+770 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Roll Bama Roll"
+            },
+            "author": "Josh Chatham",
+            "title": "Brian Kelly, LSU football are a terrible match - Roll 'Bama Roll",
+            "description": "The Bayou Bengals have swung and missed, and for that we are thankful.",
+            "url": "https://www.rollbamaroll.com/2021/12/1/22812856/brian-kelly-is-going-to-be-a-disaster-at-lsu",
+            "urlToImage": "https://cdn.vox-cdn.com/thumbor/ZpokdGQoTZ4Dd77Kqs4dobgpeWo=/0x1187:3045x2781/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/23056878/usa_today_17267656.jpg",
+            "publishedAt": "2021-12-02T00:06:53Z",
+            "content": "Since Nick Saban arrived at Alabama, LSU has been the school that provided the greatest threat to Alabamas dominance in the SEC West. Yes, the Tide had an eight game winning streak in the series begi… [+6369 chars]"
+        },
+        {
+            "source": {
+                "id": "cbs-news",
+                "name": "CBS News"
+            },
+            "author": null,
+            "title": "CDC confirms first case of Omicron COVID-19 variant in U.S. - CBS News",
+            "description": "An individual in California who had recently traveled to South Africa tested positive for the strain, the health agency said.",
+            "url": "https://www.cbsnews.com/news/covid-omicron-variant-first-united-states-cases/",
+            "urlToImage": "https://cbsnews2.cbsistatic.com/hub/i/r/2021/11/29/f432f9ce-e451-4dee-a22e-96e80ff7bf84/thumbnail/1200x630/55131e68aecd99e0368480a6d46e80de/covid-test-1236497572.jpg",
+            "publishedAt": "2021-12-01T23:57:00Z",
+            "content": "The Centers for Disease Control and Prevention (CDC) and health authorities in California confirmed the first case of COVID-19 linked to the newly discovered variant Omicron in the U.S. on Wednesday,… [+5855 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "New York Times"
+            },
+            "author": "Emily Cochrane",
+            "title": "Republicans Threaten Government Shutdown Over Vaccine Mandates - The New York Times",
+            "description": "With federal funding set to lapse on Friday, President Biden’s requirement for large employers is a sticking point over a stopgap spending bill.",
+            "url": "https://www.nytimes.com/2021/12/01/us/politics/government-shutdown-vaccine-mandate.html",
+            "urlToImage": "https://static01.nyt.com/images/2021/12/01/us/politics/01dc-cong-2/01dc-cong-2-facebookJumbo.jpg",
+            "publishedAt": "2021-12-01T23:56:16Z",
+            "content": "The push presented a conundrum for Mr. McConnell, a survivor of polio who for months has made a point of championing coronavirus vaccines and pushing back against misinformation from other Republican… [+1523 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Salon"
+            },
+            "author": "Trish Rooney",
+            "title": "As walls closed in on Theranos' Elizabeth Holmes, she turned to Rupert Murdoch - Salon",
+            "description": "Elizabeth Holmes was questioned by prosecutors this week about her communication with the media mogul",
+            "url": "https://www.salon.com/2021/12/01/as-walls-closed-in-on-theranos-elizabeth-holmes-she-turned-to-rupert-murdoch/",
+            "urlToImage": "https://mediaproxy.salon.com/width/1200/https://media.salon.com/2021/12/gettyimages-1181871591.jpg",
+            "publishedAt": "2021-12-01T23:20:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "fox-news",
+                "name": "Fox News"
+            },
+            "author": "Louis Casiano",
+            "title": "Wife of legendary music executive Clarence Avant fatally shot in Beverly Hills home - Fox News",
+            "description": "Jacqueline Avant, the wife of Grammy Award-winning music executive Clarence Avant, was fatally shot early Wednesday in her Los Angeles-area home. Bill Clinton, Magic Johnson among those expressing condolences after apparent robbery.",
+            "url": "https://www.foxnews.com/us/clarence-avant-shot-beverly-hills",
+            "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2021/12/AP21335590798420.jpg",
+            "publishedAt": "2021-12-01T23:14:54Z",
+            "content": "Jacqueline Avant, the wife of Grammy Award-winning music executive Clarence Avant, was fatally shot early Wednesday in her Los Angeles-area home.\r\nBeverly Hills police officers responded to a home ju… [+5502 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "CNBC"
+            },
+            "author": "Kif Leswing",
+            "title": "Qualcomm jumps into hot gaming market with new chip for portable game consoles - CNBC",
+            "description": "The Snapdragon G3x chip will debut in a portable device made by Razer that resembles a Nintendo Switch that can play Android games.",
+            "url": "https://www.cnbc.com/2021/12/01/qualcomm-introduces-new-chip-for-game-consoles.html",
+            "urlToImage": "https://image.cnbcfm.com/api/v1/image/106983027-1638381923655-Gaming_Handheld_Leaning.jpg?v=1638382019",
+            "publishedAt": "2021-12-01T23:00:01Z",
+            "content": "Qualcomm introduced a new Snapdragon G3x microchip on Wednesday for handheld consoles in a sign of gaming's rising importance for semiconductor companies. \r\nThe announcement shows Qualcomm wants a pi… [+1736 chars]"
+        }
+    ]
+}
