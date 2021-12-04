@@ -70,7 +70,7 @@ export class News extends Component {
         }
     ]
 
-    capitalizeFirstLetter=(string)=> {
+    capitalizeFirstLetter = (string) => {
         return string[0].toUpperCase() + string.slice(1);
     }
     constructor(props) {
@@ -81,12 +81,12 @@ export class News extends Component {
             loading: false,
             page: 1
         }
-        document.title=`${this.capitalizeFirstLetter(this.props.category)} - NewsMonkey`;
+        document.title = `${this.capitalizeFirstLetter(this.props.category)} - NewsMonkey`;
     }
 
     async updateNews() {
         const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=2baeca0a3cc147568c145d0370d438b4&page=${this.state.page}&pageSize=${this.props.pageSize}`;
-        this.setState({ loading: true });
+        // this.setState({ loading: true });
         let data = await fetch(url);
         let prashdata = await data.json();
         // console.log(prashdata);
@@ -142,24 +142,35 @@ export class News extends Component {
         this.setState({ page: this.state.page + 1 });
         this.updateNews();
     }
+
+    fetchMoreData = async () => {
+        this.setState({ page: this.state.page + 1 });
+        const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=2baeca0a3cc147568c145d0370d438b4&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+        let data = await fetch(url);
+        let prashdata = await data.json();
+        // console.log(prashdata);
+        this.setState({
+            article: this.state.article.concat(prashdata.articles),
+            totalResults: prashdata.totalResults
+        });
+    }
     render() {
 
         return (
             <div className='container my-4'>
                 <h1 className="my-3 text-center" >NewsMonkey - Top {this.capitalizeFirstLetter(this.props.category)} Headlines</h1>
-                {this.state.loading && <SpinnerLoad />}
-                <div className="row">
-                    {!this.state.loading && this.state.article.map((element) => {
-                        return <div className="col-md-4" key={element.url}>
-                            {/* <NewsItems title={element.title.slice(0,50)} discription={element.description.slice(0,100)} imageUrl={element.urlToImage} url={element.url} /> */}
-                            <NewsItems title={element.title} discription={element.description} imageUrl={element.urlToImage ? element.urlToImage : "https://www.reuters.com/resizer/PPtUQBO_55IQKCNEdtvVuJLEYw0=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/2ZF2FYJOBRIXNBXDVP5XPIJE2U.jpg"} url={element.url} date={element.publishedAt} author={element.author} publisher={element.source.name} />
+                {/* {this.state.loading && <SpinnerLoad />} */}
+                <InfiniteScroll dataLength={this.state.article.length} next={this.fetchMoreData} hasMore={this.state.article.length !== this.state.totalResults} loader={<SpinnerLoad />}>
+                    <div className="container">
+                        <div className="row">
+                            {this.state.article.map((element) => {
+                                return <div className="col-md-4" key={element.url}>
+                                    <NewsItems title={element.title} discription={element.description} imageUrl={element.urlToImage} url={element.url} date={element.publishedAt} author={element.author} publisher={element.source.name} />
+                                </div>
+                            })}
                         </div>
-                    })}
-                </div>
-                <div className="container d-flex justify-content-between">
-                    <button disabled={this.state.page <= 1} type="button" className="btn btn-dark" onClick={this.handlePrevPage}>&#8592; Previous</button>
-                    <button disabled={Math.ceil(this.state.totalResults / 20) < this.state.page + 1} type="button" className="btn btn-dark" onClick={this.handleNextPage}>Next &#8594;</button>
-                </div>
+                    </div>
+                </InfiniteScroll>
             </div>
         )
     }
