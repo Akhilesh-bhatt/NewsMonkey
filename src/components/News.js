@@ -129,7 +129,7 @@ export class News extends Component {
                     {!this.state.loading && this.state.article.map((element) => {
                         return <div className="col-md-4" key={element.url}>
                             {/* <NewsItems title={element.title.slice(0,50)} discription={element.description.slice(0,100)} imageUrl={element.urlToImage} url={element.url} /> */}
-                            <NewsItems title={element.title} discription={element.description} imageUrl={element.urlToImage ? element.urlToImage : "https://www.reuters.com/resizer/PPtUQBO_55IQKCNEdtvVuJLEYw0=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/2ZF2FYJOBRIXNBXDVP5XPIJE2U.jpg"} url={element.url} />
+                            <NewsItems title={element.title} discription={element.description} imageUrl={element.urlToImage ? element.urlToImage : "https://www.reuters.com/resizer/PPtUQBO_55IQKCNEdtvVuJLEYw0=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/2ZF2FYJOBRIXNBXDVP5XPIJE2U.jpg"} url={element.url} date={element.publishedAt} author={element.author} publisher={element.source.name} />
                         </div>
                     })}
                 </div>
