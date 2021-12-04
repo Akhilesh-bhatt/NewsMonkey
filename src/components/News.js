@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import NewsItems from './NewsItems'
 import SpinnerLoad from './SpinnerLoad';
 import PropTypes from 'prop-types'
-
+import InfiniteScroll from "react-infinite-scroll-component";
 
 export class News extends Component {
     static defaultProps = {
@@ -69,14 +69,19 @@ export class News extends Component {
             "content": "(CNN)Friends, family and an entire Michigan high school are grieving the loss of four students after a 15-year-old boy opened fire during the school day, killing four peers and shooting seven others … [+5855 chars]"
         }
     ]
-    constructor() {
-        super();
+
+    capitalizeFirstLetter=(string)=> {
+        return string[0].toUpperCase() + string.slice(1);
+    }
+    constructor(props) {
+        super(props);
         // console.log("hello! I am a constructor from a news component");
         this.state = {
             article: [],
             loading: false,
             page: 1
         }
+        document.title=`${this.capitalizeFirstLetter(this.props.category)} - NewsMonkey`;
     }
 
     async updateNews() {
@@ -141,7 +146,7 @@ export class News extends Component {
 
         return (
             <div className='container my-4'>
-                <h1 className="my-3 text-center" >NewsMonkey - News Heading</h1>
+                <h1 className="my-3 text-center" >NewsMonkey - Top {this.capitalizeFirstLetter(this.props.category)} Headlines</h1>
                 {this.state.loading && <SpinnerLoad />}
                 <div className="row">
                     {!this.state.loading && this.state.article.map((element) => {
