@@ -8,12 +8,14 @@ export class News extends Component {
     static defaultProps = {
         country: 'us',
         pageSize: 8,
-        category: 'general'
+        category: 'general',
+        API: "2baeca0a3cc147568c145d0370d438b4"
     }
     static propTypes = {
         country: PropTypes.string,
         pageSize: PropTypes.number,
-        category: PropTypes.string
+        category: PropTypes.string,
+        API: PropTypes.string
     }
     article = [
         {
@@ -85,16 +87,20 @@ export class News extends Component {
     }
 
     async updateNews() {
-        const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=2baeca0a3cc147568c145d0370d438b4&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+        this.props.setProgress(20);
+        const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.API}&page=${this.state.page}&pageSize=${this.props.pageSize}`;
         // this.setState({ loading: true });
         let data = await fetch(url);
+        this.props.setProgress(40);
         let prashdata = await data.json();
+        this.props.setProgress(75);
         // console.log(prashdata);
         this.setState({
             article: prashdata.articles,
             totalResults: prashdata.totalResults,
             loading: false
         });
+        this.props.setProgress(100);
     }
 
     async componentDidMount() {
@@ -145,7 +151,7 @@ export class News extends Component {
 
     fetchMoreData = async () => {
         this.setState({ page: this.state.page + 1 });
-        const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=2baeca0a3cc147568c145d0370d438b4&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+        const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.API}&page=${this.state.page}&pageSize=${this.props.pageSize}`;
         let data = await fetch(url);
         let prashdata = await data.json();
         // console.log(prashdata);

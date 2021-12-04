@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component} from 'react'
 
 export class NewsItems extends Component {
     render() {
@@ -12,7 +12,7 @@ export class NewsItems extends Component {
                         <p className="card-text">{discription}</p>
                         <p className="card-text"><small className="text-muted">By {author ? author : "unkown"} On {new Date(date).toGMTString()}</small></p>
                         <a rel="noreferrer" href={url} target="_blank" className="btn btn-sm btn-dark">Read More</a>
-                        <span className="position-absolute top-0 translate-middle badge rounded-pill bg-danger" style={{left:"94%", zIndex:"1"}}>
+                        <span className="position-absolute top-0 d-flex end-0 justify-content-end badge rounded-pill bg-danger" >
                             {publisher}
                         </span>
                     </div>
