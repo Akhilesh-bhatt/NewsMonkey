@@ -55,6 +55,9 @@ const News = (props) => {
         setArticle(article.concat(prashdata.articles))
         setTotalResults(prashdata.totalResults)
     }
+    if (article === undefined) {
+        article.length = 0
+    }
 
     return (
         <div className='container my-4'>
