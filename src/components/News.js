@@ -60,7 +60,7 @@ const News = (props) => {
         <div className='container my-4'>
             <h1 className="mb-3 text-center" style={{marginTop:'70px'}} >NewsMonkey - Top {capitalizeFirstLetter(props.category)} Headlines</h1>
             {loading && <SpinnerLoad />}
-            {article && <InfiniteScroll dataLength={article.length} next={fetchMoreData} hasMore={article.length !== totalResults} loader={<SpinnerLoad />}>
+            <InfiniteScroll dataLength={article.length} next={fetchMoreData} hasMore={article.length !== totalResults} loader={<SpinnerLoad />}>
                 <div className="container">
                     <div className="row">
                         {article.map((element) => {
@@ -70,7 +70,7 @@ const News = (props) => {
                         })}
                     </div>
                 </div>
-            </InfiniteScroll>}
+            </InfiniteScroll>
         </div>
     )
 }
