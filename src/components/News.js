@@ -33,8 +33,8 @@ const News = (props) => {
     // use at place of componentDidMount
     useEffect(() => {
         updateNews()
-        // eslint-disable-next-line
         document.title = `${capitalizeFirstLetter(props.category)} - NewsMonkey`;
+        // eslint-disable-next-line 
     }, []);
 
     // const handlePrevPage = async () => {
