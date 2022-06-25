@@ -55,14 +55,12 @@ const News = (props) => {
         setArticle(article.concat(prashdata.articles))
         setTotalResults(prashdata.totalResults)
     }
-    if (article === undefined) {
-        article.length = 0
-    }
 
     return (
         <div className='container my-4'>
             <h1 className="mb-3 text-center" style={{marginTop:'70px'}} >NewsMonkey - Top {capitalizeFirstLetter(props.category)} Headlines</h1>
             {loading && <SpinnerLoad />}
+            {article !== undefined &&
             <InfiniteScroll dataLength={article.length} next={fetchMoreData} hasMore={article.length !== totalResults} loader={<SpinnerLoad />}>
                 <div className="container">
                     <div className="row">
@@ -73,7 +71,7 @@ const News = (props) => {
                         })}
                     </div>
                 </div>
-            </InfiniteScroll>
+            </InfiniteScroll>}
         </div>
     )
 }
