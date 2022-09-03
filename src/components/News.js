@@ -60,10 +60,10 @@ const News = (props) => {
         <div className='container my-4'>
             <h1 className="mb-3 text-center" style={{marginTop:'70px'}} >NewsMonkey - Top {capitalizeFirstLetter(props.category)} Headlines</h1>
             {loading && <SpinnerLoad />}
-            <InfiniteScroll dataLength={article.length} next={fetchMoreData} hasMore={article.length !== totalResults} loader={<SpinnerLoad />}>
+            <InfiniteScroll dataLength={article?.length} next={fetchMoreData} hasMore={article?.length !== totalResults} loader={<SpinnerLoad />}>
                 <div className="container">
                     <div className="row">
-                        {article.map((element) => {
+                        {article?.map((element) => {
                             return <div className="col-md-4" key={element.url}>
                                 <NewsItems title={element.title} discription={element.description} imageUrl={element.urlToImage} url={element.url} date={element.publishedAt} author={element.author} publisher={element.source.name} />
                             </div>
